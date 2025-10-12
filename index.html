@@ -1,66 +1,229 @@
-	<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Eliyas Tutoring</title>
-	<link rel="stylesheet" href="style.css">
+    <title>Eliyas Tutors Maths | Expert Teaching</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- HEADER -->
+    <header>
+        <nav>
+            <a href="#" class="logo">
+                <img src="logo-w.png" alt="Eliyas Tutors">
+            </a>
 
-    <!-- Banner Section -->
-    <header class="banner">
-        <div class="logo-container">
-            <a href=""><img src="logo.png" alt="Eliyas Tutoring Logo"></a>
-        </div>
-		<div class="ra">
-			<div><a href="mailto:eliyas.gardiner@gmail.com">eliyas.gardiner@gmail.com</a></div>
-			<div><a href="tel:+44 7305172431">+44 7305 172431</a></div>
-		</div>
+            <ul class="nav-links">
+                <li><a href="#" onclick="showPage('home')">Home</a></li>
+                <li><a href="#" onclick="showPage('contact')">Contact</a></li>
+				<li>
+					<a href="https://wa.me/447305172431?text=Hi%20there%2C%20I%20have%20a%20question!" target="_blank">
+					  <button style="background-color:#25D366; color:white; border:none; border-radius:5px;">
+						Chat on WhatsApp
+					  </button>
+					</a>
+				</li>
+            </ul>
+        </nav>
     </header>
-	
-	<div id="main">
-	
-		<section class="centered-text">
-			<h1>Reigate Maths Tutor</h1>
-			<h2>Do you struggle with Maths?</h2>
-			<h2>Do you want to achieve the best grade you can?</h2>
-		</section>
-			
-		<section class="box">
-			<p>Teaching Maths for GCSE and A-Level</p>
-			<p>AQA, Edexcel and OCR</p>
-			<p>Offering in-person and online lessons</p>
-			<p>(in-person only for Reigate and local area)</p>
-			<p>&nbsp;</p>
-			<p>To get in touch:</p>
-			<a href="contact-me.html" class="btn">Contact Me Here</a>
-			<p>Or message me using my <a href="mailto:eliyas.gardiner@gmail.com">Email</a> or <a href="tel:+44 7305172431">Phone Number</a></p>
-	
 
-		</section>
-			
-		<section class="box">
-			<h2>About Me</h2>
-			<p>- A* in Maths A-Level</p>
-			<p>- A* in Further Maths A-Level</p>
-			<p>- Grade 9 in GCSE Maths</p>
-			<p>-DBS Approved</p>
-		</section>
+    <!-- HOME PAGE -->
+    <div id="home" class="page active">
+        <!-- HERO SECTION -->
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Master Mathematics with Expert Guidance</h1>
+                <p>Personalised tutoring for GCSE, A-Level, and beyond</p>
+                <a href="#" onclick="showPage('contact')" class="cta-button">Get Started Today</a>
+            </div>
+        </section>
 		
-		<section class="box">
-			<h2>Details</h2>
-			<p>Standard Rate - £30 an hour</p>
-		</section>
-		
-			
-		<section class="centered-text">
-			<h3>Contact me here:</h3>
-			Email: <a href="mailto:eliyas.gardiner@gmail.com">eliyas.gardiner@gmail.com</a><br>
-			Phone Number: <a href="tel:+44 7305172431">+44 7305 172431</a><br>
-			<img src="in.png" alt="Eliyas Tutoring Logo">&nbsp;<a href="https://www.linkedin.com/in/eliyas-gardiner-a52bba315/"target="_blank">LinkedIn</a>
-		</section>
-	</div>
+        <!-- ABOUT ME SECTION -->
+        <section class="about-me">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>About Me</h2>
+                    <p>Hi! I'm a Maths student at University of Warwick, passionate about making mathematics enjoyable and accessible for everyone. Whether you're a parent looking for support for your child or a student wanting to boost your grades, I'm here to help you succeed.</p>
+                    
+                    <div class="achievements">
+                        <div class="achievement">
+                            <div class="achievement-icon">🎓</div>
+                            <div class="achievement-text">
+                                <h4>A* in A-Level Maths</h4>
+                                <p>Mastered pure mathematics, mechanics, and statistics</p>
+                            </div>
+                        </div>
+                        <div class="achievement">
+                            <div class="achievement-icon">⭐</div>
+                            <div class="achievement-text">
+                                <h4>A* in A-Level Further Maths</h4>
+                                <p>Advanced problem-solving and mathematical thinking</p>
+                            </div>
+                        </div>
+                        <div class="achievement">
+                            <div class="achievement-icon">✓</div>
+                            <div class="achievement-text">
+                                <h4>Grade 9 in GCSE Maths</h4>
+                                <p>Strong foundation across all mathematical areas</p>
+                            </div>
+                        </div>
+                    </div>
 
+                    <p class="about-closing">I love working with students one-to-one because every learner is unique. I tailor my teaching to your learning style, breaking down difficult concepts into manageable steps and building your confidence along the way. All my sessions are conducted online, making lessons convenient and flexible for busy families. I'm here to support your mathematical journey, whether you're aiming for top grades or simply want to understand maths better.</p>
+                </div>
+                <div class="about-image" style="background-image:url(eliyas.png);"></div>
+            </div>
+        </section>
+
+        <!-- SERVICES SECTION -->
+        <section class="services">
+            <h2 class="section-title">Tutoring Levels Offered</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">📚</div>
+                    <h3>GCSE Mathematics</h3>
+                    <p>Comprehensive preparation for GCSE exams with targeted practice and revision strategies.</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">🎓</div>
+                    <h3>A-Level Mathematics</h3>
+                    <p>Advanced content covering Pure, Mechanics, and Statistics with exam board specific guidance.</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">🧮</div>
+                    <h3>TMUA Preparation</h3>
+                    <p>Specialist coaching for Test of Mathematics for University Admission at leading universities.</p>
+                </div>
+
+                <!-- <div class="service-card"> -->
+                    <!-- <div class="service-icon">🔢</div> -->
+                    <!-- <h3>MAT Preparation</h3> -->
+                    <!-- <p>Targeted tutoring for the Mathematics Admissions Test required by Oxford and Imperial.</p> -->
+                <!-- </div> -->
+
+                <div class="service-card">
+                    <div class="service-icon">✨</div>
+                    <h3>Key Stage 3 & 11+ Maths</h3>
+                    <p>Build confidence and fundamentals for younger students and those needing extra support.</p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- WHY CHOOSE SECTION -->
+        <section class="why-choose">
+            <div class="why-choose-content">
+                <div class="why-choose-text">
+                    <h2>Why Choose Me?</h2>
+                    <ul class="why-choose-list">
+                        <li>Highly qualified tutor with proven exam success</li>
+                        <li>Personalised lesson plans tailored to your goals</li>
+                        <li>Flexible scheduling around your commitments</li>
+                        <li>Online and in-person sessions available</li>
+                        <li>Track progress with regular feedback and assessments</li>
+                        <li>Exam board specific techniques and resources</li>
+                    </ul>
+                </div>
+                <div class="why-choose-image" style="background-image:url(maths.jpg);background-size:cover"></div>
+            </div>
+        </section>
+    </div>
+
+    <!-- CONTACT PAGE -->
+    <div id="contact" class="page">
+        <section class="contact-section">
+            <div class="contact-content">
+                <h2>Get in Touch</h2>
+
+
+                <form id="contact-form">
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" name="from_name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="reply_to" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="qualification">Level of Study</label>
+                        <select id="qualification" name="qualification" style="width: 100%; padding: 0.75rem; border: 2px solid var(--accent); border-radius: 8px; font-size: 1rem; background-color: var(--primary-bg); color: var(--text-light);">
+							<option value="" selected disabled>-- please select --</option>
+							<option value="A-Level">A-Level</option>
+							<option value="TMUA">TMUA Preparation</option>
+							<option value="GCSE">GCSE</option>
+							<option value="Key Stage 3">Key Stage 3</option>
+							<option value="11+">11+</option>
+							<option value="Other">Other</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" placeholder="Tell us about your needs and goals..." required></textarea>
+                    </div>
+					
+					<button type="submit" class="submit-btn">Send Message</button>
+				</form>
+				
+				<p id="status"></p>
+
+            </div>
+        </section>
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>&copy; 2025 Eliyas Tutors. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function showPage(pageId) {
+            // Hide all pages
+            const pages = document.querySelectorAll('.page');
+            pages.forEach(page => page.classList.remove('active'));
+
+            // Show selected page
+            document.getElementById(pageId).classList.add('active');
+            window.scrollTo(0, 0);
+        }
+    </script>
+	<script type="text/javascript"
+			src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+	</script>
+	<script>
+		(function(){
+			emailjs.init({
+			publicKey: "R3rGQuWf7RjrRaorE",
+		});
+		})();
+
+		const form = document.getElementById('contact-form');
+		const status = document.getElementById('status');
+		
+
+		form.addEventListener('submit', function(event) {
+			event.preventDefault();
+
+			emailjs.sendForm('service_931yzcd', 'template_k83zugy', this)
+				.then(() => {
+				  status.textContent = "✅ Message sent successfully!";
+				  form.reset();
+				}, (err) => {
+				  console.error(err);
+				  status.textContent = "❌ Oops, something went wrong. Please try again.";
+				});
+			});
+	  </script>
 </body>
 </html>
