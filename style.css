@@ -371,6 +371,8 @@
             outline: none;
             border-color: var(--text-light);
             background-color: rgba(255, 255, 255, 0.05);
+			color:black;
+			background-color:white;
         }
 
         .submit-btn {
