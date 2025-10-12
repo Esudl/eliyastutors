@@ -14,7 +14,8 @@
                 <img src="logo-w.png" alt="Eliyas Tutors">
             </a>
 
-            <ul class="nav-links">
+			<button class="menu-toggle" onclick="toggleMenu()">☰</button>
+            <ul class="nav-links" id="navLinks">
                 <li><a href="#" onclick="showPage('home')">Home</a></li>
                 <li><a href="#" onclick="showPage('contact')">Contact</a></li>
 				<li>
@@ -188,6 +189,11 @@
     </footer>
 
     <script>
+		function toggleMenu() {
+            const navLinks = document.getElementById('navLinks');
+            navLinks.classList.toggle('active');
+        }
+		
         function showPage(pageId) {
             // Hide all pages
             const pages = document.querySelectorAll('.page');
@@ -196,6 +202,10 @@
             // Show selected page
             document.getElementById(pageId).classList.add('active');
             window.scrollTo(0, 0);
+			
+			// Close menu on mobile
+            const navLinks = document.getElementById('navLinks');
+            navLinks.classList.remove('active');
         }
     </script>
 	<script type="text/javascript"
