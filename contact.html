@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Eliyas Tutors Maths</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- HEADER -->
+    <header>
+        <nav>
+            <a href="index.html" class="logo">
+                <img src="logo-w.png" alt="Eliyas Tutors">
+            </a>
+
+            <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li>
+                    <a href="https://wa.me/447305172431?text=Hi%20there%2C%20I%20have%20a%20question!" target="_blank">
+                      <button style="background-color:#25D366; color:white; border:none; border-radius:5px;">
+                        Chat on WhatsApp
+                      </button>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- CONTACT SECTION -->
+    <section class="contact-section">
+        <div class="contact-content">
+            <h2>Get in Touch</h2>
+
+            <form id="contact-form">
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="from_name" autocomplete="on" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="reply_to" autocomplete="on" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" autocomplete="on">
+                </div>
+
+                <div class="form-group">
+                    <label for="qualification">Level of Study</label>
+                    <select id="qualification" name="qualification" style="width: 100%; padding: 0.75rem; border: 2px solid var(--accent); border-radius: 8px; font-size: 1rem; background-color: var(--primary-bg); color: var(--text-light);">
+                        <option value="" selected disabled>-- please select --</option>
+                        <option value="A-Level">A-Level</option>
+                        <option value="TMUA">TMUA Preparation</option>
+                        <option value="GCSE">GCSE</option>
+                        <option value="Key Stage 3">Key Stage 3</option>
+                        <option value="11+">11+</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" placeholder="Tell us about your needs and goals..." required></textarea>
+                </div>
+                
+                <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+            
+            <p id="status"></p>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>&copy; 2025 Eliyas Tutors. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            const navLinks = document.getElementById('navLinks');
+            navLinks.classList.toggle('active');
+        }
+    </script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script>
+        (function(){
+            emailjs.init({
+                publicKey: "R3rGQuWf7RjrRaorE",
+            });
+        })();
+
+        const form = document.getElementById('contact-form');
+        const status = document.getElementById('status');
+
+        form.addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            emailjs.sendForm('service_931yzcd', 'template_k83zugy', this)
+                .then(() => {
+                    status.textContent = "✅ Message sent successfully!";
+                    form.reset();
+                }, (err) => {
+                    console.error(err);
+                    status.textContent = "❌ Oops, something went wrong. Please try again.";
+                });
+        });
+    </script>
+</body>
+</html>
