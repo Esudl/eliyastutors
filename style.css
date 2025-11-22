@@ -139,7 +139,7 @@
 
         /* ===== ABOUT ME SECTION ===== */
         .about-me {
-            padding: 5rem 2rem;
+            padding: 2rem 2rem;
             background-color: #f8f9fa;
         }
 
@@ -213,7 +213,7 @@
 
         /* ===== SERVICES SECTION ===== */
         .services {
-            padding: 5rem 2rem;
+            padding: 2rem 2rem;
             max-width: 1200px;
             margin: 0 auto;
         }
@@ -227,7 +227,7 @@
 
         .services-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
             gap: 2rem;
         }
 
@@ -274,7 +274,7 @@
         .why-choose {
             background-color: var(--primary-bg);
             color: var(--text-light);
-            padding: 5rem 2rem;
+            padding: 2rem 2rem;
         }
 
         .why-choose-content {
@@ -324,7 +324,7 @@
 
         /* ===== CONTACT SECTION ===== */
         .contact-section {
-            padding: 5rem 2rem;
+            padding: 2rem 2rem;
             max-width: 800px;
             margin: 0 auto;
         }
@@ -497,7 +497,7 @@
 		
 		/* PRICING SECTION */
 .pricing {
-    padding: 4rem 2rem;
+    padding: 2rem 2rem;
     text-align: center;
 }
 
